@@ -1,0 +1,35 @@
+
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; /
+  }
+
+  .copy{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .myBtn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+  }
+
+
+
+  @media (max-width: 770px) {
+footer {
+padding: 0 2rem;
+gap: 2rem;
+}
+.copy{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+
+}

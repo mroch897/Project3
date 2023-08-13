@@ -1,0 +1,85 @@
+.mr-hamburguer,
+.mr-hamburguer-icon {
+  display: none;
+}
+
+.mr-section-header-layout {
+  text-transform: uppercase;
+  align-items: center;
+  padding: 20px 70px;
+  
+}
+
+.mr-section-header-nav {
+  gap: 1.5rem;
+}
+
+.mr-layout-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.mr-section-header--nav-link {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+
+.mr-section-header--nav-link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: black;
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform 0.55s;
+}
+
+.mr-section-header--nav-link:hover::after {
+  transform: scale(1, 1);
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 48rem) {
+    .mr-section-header-layout {
+      flex-direction: column;
+      font-style: normal;
+    }
+  
+    .mr-hamburguer-icon {
+      display: inline-block;
+      padding: 0.6rem;
+    }
+  
+    .mr-section-nav {
+      display: none;
+    }
+  
+    .mr-sign-container {
+      display: none;
+    }
+  
+    .mr-hamburguer:checked ~ .mr-section-nav {
+      display: block;
+      padding: 1.5rem 0;
+    }
+  
+    .mr-hamburguer:checked ~ .mr-sign-container {
+      display: block;
+      padding: 1.5rem 0;
+    }
+  
+    .mr-section-header-nav {
+      flex-direction: column;
+    }
+
+    .logo {
+        display: none;
+    }
+  }
